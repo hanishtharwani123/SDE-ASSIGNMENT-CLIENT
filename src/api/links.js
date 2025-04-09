@@ -27,7 +27,7 @@ export const getLinks = async (page = 1, search = "") => {
     const token = localStorage.getItem("token");
 
     const response = await axios.get(
-      `http://localhost:5000/api/links?page=${page}&search=${search}`,
+      `https://sde-assignment-server.onrender.com/api/links?page=${page}&search=${search}`,
       {
         headers: {
           Authorization: `Bearer ${token}`,
@@ -46,7 +46,7 @@ export const getLinkById = async (id) => {
   try {
     const token = localStorage.getItem("token");
 
-    const response = await axios.get(`http://localhost:5000/api/links/${id}`, {
+    const response = await axios.get(`https://sde-assignment-server.onrender.com/api/links/${id}`, {
       headers: {
         Authorization: `Bearer ${token}`,
       },
@@ -64,7 +64,7 @@ export const deleteLink = async (id) => {
     const token = localStorage.getItem("token");
 
     const response = await axios.delete(
-      `http://localhost:5000/api/links/${id}`,
+      `https://sde-assignment-server.onrender.com/api/links/${id}`,
       {
         headers: {
           Authorization: `Bearer ${token}`,
