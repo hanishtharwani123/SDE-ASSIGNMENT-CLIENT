@@ -93,7 +93,7 @@ function DashboardPage() {
                     onChange={(e) => setSearchTerm(e.target.value)}
                   />
                   <button
-                    className="btn btn-primary whitespace-nowrap"
+                    className="btn btn-primary whitespace-nowrap cursor-pointer"
                     onClick={handleCreateLink}
                   >
                     Create Link
@@ -127,7 +127,7 @@ function DashboardPage() {
               <div className="flex items-center justify-between">
                 <h1 className="text-2xl font-bold">Link Analytics</h1>
                 <button
-                  className="btn btn-secondary"
+                  className="btn btn-secondary cursor-pointer"
                   onClick={() => setActiveTab("links")}
                 >
                   Back to Links
