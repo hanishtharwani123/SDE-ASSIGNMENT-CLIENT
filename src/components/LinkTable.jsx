@@ -141,7 +141,7 @@ function LinkTable({
                   <div className="flex justify-end space-x-2">
                     <button
                       onClick={() => onCopy(link.shortUrl)}
-                      className="text-gray-600 hover:text-gray-900"
+                      className="text-gray-600 hover:text-gray-900 cursor-pointer"
                       title="Copy link"
                     >
                       <svg
@@ -161,7 +161,7 @@ function LinkTable({
                     </button>
                     <button
                       onClick={() => onShowQR(link)}
-                      className="text-gray-600 hover:text-gray-900"
+                      className="text-gray-600 hover:text-gray-900 cursor-pointer"
                       title="Show QR code"
                     >
                       <svg
@@ -181,7 +181,7 @@ function LinkTable({
                     </button>
                     <button
                       onClick={() => onViewAnalytics(link)}
-                      className="text-gray-600 hover:text-gray-900"
+                      className="text-gray-600 hover:text-gray-900 cursor-pointer"
                       title="View analytics"
                     >
                       <svg
@@ -201,7 +201,7 @@ function LinkTable({
                     </button>
                     <button
                       onClick={() => handleDelete(link._id)}
-                      className="text-red-600 hover:text-red-900"
+                      className="text-red-600 hover:text-red-900 cursor-pointer"
                       title="Delete link"
                     >
                       <svg
