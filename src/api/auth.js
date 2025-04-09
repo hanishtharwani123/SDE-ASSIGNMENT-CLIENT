@@ -3,7 +3,7 @@ import axios from "axios";
 // Login user
 export const loginUser = async (email, password) => {
   try {
-    const response = await axios.post("http://localhost:5000/api/auth/login", {
+    const response = await axios.post("https://sde-assignment-server.onrender.com/api/auth/login", {
       email,
       password,
     });
@@ -18,7 +18,7 @@ export const getUserProfile = async () => {
   try {
     const token = localStorage.getItem("token");
 
-    const response = await axios.get("http://localhost:5000/api/auth/profile", {
+    const response = await axios.get("https://sde-assignment-server.onrender.com/api/auth/profile", {
       headers: {
         Authorization: `Bearer ${token}`,
       },
