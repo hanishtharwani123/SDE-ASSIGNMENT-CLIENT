@@ -4,7 +4,7 @@ import axios from "axios";
 export const redirectToOriginalUrl = async (shortCode, deviceInfo) => {
   try {
     const response = await axios.post(
-      `http://localhost:5000/api/redirect/${shortCode}`,
+      `https://sde-assignment-server.onrender.com/api/redirect/${shortCode}`,
       deviceInfo
     );
     return response.data;
@@ -19,7 +19,7 @@ export const getAnalytics = async () => {
     const token = localStorage.getItem("token");
 
     const response = await axios.get(
-      "http://localhost:5000/api/redirect/analytics",
+      "https://sde-assignment-server.onrender.com/api/redirect/analytics",
       {
         headers: {
           Authorization: `Bearer ${token}`,
