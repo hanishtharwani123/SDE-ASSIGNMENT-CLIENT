@@ -6,7 +6,7 @@ export const createLink = async (linkData) => {
     const token = localStorage.getItem("token");
 
     const response = await axios.post(
-      "http://localhost:5000/api/links",
+      "https://sde-assignment-server.onrender.com/api/links",
       linkData,
       {
         headers: {
