@@ -6,7 +6,7 @@ function Sidebar({ activeTab, onTabChange, onCreateLink }) {
       <div className="flex flex-col flex-1 overflow-y-auto">
         <nav className="flex-1 px-2 py-4 space-y-1">
           <button
-            className={`w-full flex items-center px-2 py-2 text-sm font-medium rounded-md ${
+            className={`w-full flex items-center px-2 py-2 text-sm font-medium rounded-md cursor-pointer ${
               activeTab === "links"
                 ? "bg-blue-100 text-blue-700"
                 : "text-gray-600 hover:bg-gray-100 hover:text-gray-900"
@@ -31,7 +31,7 @@ function Sidebar({ activeTab, onTabChange, onCreateLink }) {
           </button>
 
           <button
-            className={`w-full flex items-center px-2 py-2 text-sm font-medium rounded-md ${
+            className={`w-full flex items-center px-2 py-2 text-sm font-medium rounded-md cursor-pointer ${
               activeTab === "overview"
                 ? "bg-blue-100 text-blue-700"
                 : "text-gray-600 hover:bg-gray-100 hover:text-gray-900"
@@ -58,7 +58,7 @@ function Sidebar({ activeTab, onTabChange, onCreateLink }) {
 
         <div className="p-4">
           <button
-            className="w-full flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700"
+            className="w-full flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 cursor-pointer"
             onClick={onCreateLink}
           >
             <svg
